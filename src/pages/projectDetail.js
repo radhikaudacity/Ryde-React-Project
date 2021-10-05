@@ -66,7 +66,7 @@ function ProjectDetail(props) {
                   {/* <h1> {projectData[index].title} </h1> */}
                   <img
                     src={
-                      process.env.PUBLIC_URL +
+                      window.location.origin +
                       '/images/projectDetail/project1.jpg'
                     }
                     // src={project1}
