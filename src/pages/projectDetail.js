@@ -48,8 +48,8 @@ function ProjectDetail(props) {
   const params = useParams();
   const index = params.id - 1;
   const projectData = props.projectData;
-  const ipath = projectData[index].image;
-  console.log(ipath, 'ipath');
+  const ipath = process.env.PUBLIC_URL + projectData[index].image;
+  console.log(ipath, 'ipath new', process.env.PUBLIC_URL);
   return (
     <div className='wrapper'>
       <div className='container'>
@@ -65,8 +65,8 @@ function ProjectDetail(props) {
                 <div>
                   {/* <h1> {projectData[index].title} </h1> */}
                   <img
-                    // src={process.env.PUBLIC_URL + ipath}
-                    src={project1}
+                    src={ipath}
+                    // src={project1}
                     className='projImg'
                     alt={'projImg' + (index + 1)}
                   />
