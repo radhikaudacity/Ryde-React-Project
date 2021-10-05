@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="72" height="71.5" viewBox="0 0 72 71.5">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #7420d5;
+      }
+    </style>
+  </defs>
+  <g id="logo_stair" data-name="logo stair" transform="translate(-32.5 -31.5)">
+    <rect id="Rectangle_1" data-name="Rectangle 1" class="cls-1" width="10" height="40" transform="translate(64 32)"/>
+    <rect id="Rectangle_2" data-name="Rectangle 2" class="cls-1" width="10" height="40" transform="translate(33 63)"/>
+    <rect id="Rectangle_3" data-name="Rectangle 3" class="cls-1" width="10" height="40" transform="translate(32.5 72.5) rotate(-90)"/>
+    <rect id="Rectangle_4" data-name="Rectangle 4" class="cls-1" width="10" height="40" transform="translate(64.5 41.5) rotate(-90)"/>
+  </g>
+</svg>
