@@ -1,8 +1,10 @@
+import project1 from '../images/projectDetail/project1.jpg';
+import project2 from '../images/projectDetail/project2.jpg';
 const projectsData = [
   // Project 1 - Tax Reporting
   {
     title: 'Oracle EPM Cloud: Administering Tax Reporting',
-    image: '/images/projectDetail/project1.jpg',
+    image: project1,
     thumbImage: '/images/showProjects/project1.jpg',
     product: 'Oracle Enterprise Management Cloud',
     ePMBusinessProcess: 'EPM Profitability and Cost Management',
@@ -266,7 +268,7 @@ const projectsData = [
   // Project 2 - Administer Profitability and Cost Management
   {
     title: 'Oracle EPM Cloud: Administer Profitability and Cost Management',
-    image: '/images/projectDetail/project2.jpg',
+    image: project2,
     thumbImage: '/images/showProjects/project2.jpg',
     product: 'Oracle Enterprise Management Cloud',
     ePMBusinessProcess: 'EPM Profitability and Cost Management',

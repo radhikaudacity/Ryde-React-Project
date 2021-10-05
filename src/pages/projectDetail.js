@@ -62,7 +62,8 @@ function ProjectDetail(props) {
                 <div>
                   {/* <h1> {projectData[index].title} </h1> */}
                   <img
-                    src={process.env.PUBLIC_URL + projectData[index].image}
+                    // src={process.env.PUBLIC_URL + projectData[index].image}
+                    src={projectData[index].image}
                     className='projImg'
                     alt={'projImg' + (index + 1)}
                   />
