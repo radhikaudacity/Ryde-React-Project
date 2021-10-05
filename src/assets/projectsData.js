@@ -4,7 +4,7 @@ const projectsData = [
   // Project 1 - Tax Reporting
   {
     title: 'Oracle EPM Cloud: Administering Tax Reporting',
-    image: project1,
+    image: '/images/projectDetail/project1.jpg',
     thumbImage: '/images/showProjects/project1.jpg',
     product: 'Oracle Enterprise Management Cloud',
     ePMBusinessProcess: 'EPM Profitability and Cost Management',
@@ -268,7 +268,7 @@ const projectsData = [
   // Project 2 - Administer Profitability and Cost Management
   {
     title: 'Oracle EPM Cloud: Administer Profitability and Cost Management',
-    image: project2,
+    image: '/images/projectDetail/project2.jpg',
     thumbImage: '/images/showProjects/project2.jpg',
     product: 'Oracle Enterprise Management Cloud',
     ePMBusinessProcess: 'EPM Profitability and Cost Management',

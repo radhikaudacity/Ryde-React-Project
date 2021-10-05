@@ -20,7 +20,7 @@ function Navigation(props) {
       <div className='logo'>
         <div className='logo-items'>
           <img
-            src={process.env.PUBLIC_URL + 'images/logo.svg'}
+            src={process.env.PUBLIC_URL + '/images/logo.svg'}
             className='logo-svg'
           />
           <h2>Ryde</h2>
