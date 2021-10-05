@@ -10,21 +10,21 @@ export default function CarousalHeader() {
       <Carousel.Item interval={3000}>
         <img
           className='d-block w-100'
-          src={process.env.PUBLIC_URL + 'images/carousel/carousel3.jpg'}
+          src={process.env.PUBLIC_URL + '/images/carousel/carousel3.jpg'}
           alt='First slide'
         />
       </Carousel.Item>
       <Carousel.Item interval={3000}>
         <img
           className='d-block w-100'
-          src={process.env.PUBLIC_URL + 'images/carousel/carousel1.jpg'}
+          src={process.env.PUBLIC_URL + '/images/carousel/carousel1.jpg'}
           alt='Second slide'
         />
       </Carousel.Item>
       <Carousel.Item interval={3000}>
         <img
           className='d-block w-100'
-          src={process.env.PUBLIC_URL + 'images/carousel/carousel4.jpg'}
+          src={process.env.PUBLIC_URL + '/images/carousel/carousel4.jpg'}
           alt='Third slide'
         />
       </Carousel.Item>

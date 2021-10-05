@@ -22,28 +22,27 @@ function App() {
   return (
     <>
       <Navigation />
-      <Suspense fallback={<h2>Loading ...</h2>}>
-        <Switch>
-          <Route path='/home' exact>
-            <Home projectData={projectData} />
-          </Route>
-          <Route path='/team/:id'>
-            <TeamDetail />
-          </Route>
-          <Route path='/projectinfo/:id'>
-            <ProjectDetail projectData={projectData} />
-          </Route>
-          <Route path='/about'>
-            <About />
-          </Route>
-          <Route path='/'>
-            <Redirect to='/home' />
-          </Route>
-          <Route path='*'>
-            <Redirect to='/home' />
-          </Route>
-        </Switch>
-      </Suspense>
+
+      <Switch>
+        <Route path='/home' exact>
+          <Home projectData={projectData} />
+        </Route>
+        <Route path='/team/:id'>
+          <TeamDetail />
+        </Route>
+        <Route path='/projectinfo/:id'>
+          <ProjectDetail projectData={projectData} />
+        </Route>
+        <Route path='/about'>
+          <About />
+        </Route>
+        <Route path='/'>
+          <Redirect to='/home' />
+        </Route>
+        <Route path='*'>
+          <Redirect to='/home' />
+        </Route>
+      </Switch>
     </>
   );
 }

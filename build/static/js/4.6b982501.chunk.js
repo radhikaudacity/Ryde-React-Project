@@ -1,0 +1,2 @@
+(this["webpackJsonprydecs-v.5.0"]=this["webpackJsonprydecs-v.5.0"]||[]).push([[4],{43:function(t,a,c){"use strict";c.d(a,"a",(function(){return r}));var n=c(0);function r(t){return Object(n.a)({tag:"svg",attr:{viewBox:"0 0 24 24"},child:[{tag:"path",attr:{d:"M8.59 16.34l4.58-4.59-4.58-4.59L10 5.75l6 6-6 6z"}}]})(t)}}}]);
+//# sourceMappingURL=4.6b982501.chunk.js.map
