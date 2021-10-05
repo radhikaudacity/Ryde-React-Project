@@ -1,10 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-
+import projectData from '../assets/projectsData';
 import './projectDetail.css';
 import { MdKeyboardArrowRight } from 'react-icons/md';
 import ProjectsSubMenu from '../components/projectsSubMenu';
-import project1 from '../images/projectDetail/project1.jpg';
 
 function ListItem(props) {
   const [checked, setChecked] = useState(false);
@@ -45,9 +44,10 @@ function List(props) {
   );
 }
 function ProjectDetail(props) {
+  console.log(projectData, 'project data');
   const params = useParams();
   const index = params.id - 1;
-  const projectData = props.projectData;
+  console.log(index, 'index');
   const ipath = projectData[index].image;
   console.log(ipath, 'ipath new', process.env.PUBLIC_URL);
   return (
@@ -65,10 +65,7 @@ function ProjectDetail(props) {
                 <div>
                   {/* <h1> {projectData[index].title} </h1> */}
                   <img
-                    src={
-                      window.location.origin +
-                      '/images/projectDetail/project1.jpg'
-                    }
+                    src={window.location.origin + ipath}
                     // src={project1}
                     className='projImg'
                     alt={'projImg' + (index + 1)}
