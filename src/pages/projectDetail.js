@@ -4,6 +4,7 @@ import { useParams } from 'react-router-dom';
 import './projectDetail.css';
 import { MdKeyboardArrowRight } from 'react-icons/md';
 import ProjectsSubMenu from '../components/projectsSubMenu';
+import project1 from '../images/projectDetail/project1.jpg';
 
 function ListItem(props) {
   const [checked, setChecked] = useState(false);
@@ -47,6 +48,8 @@ function ProjectDetail(props) {
   const params = useParams();
   const index = params.id - 1;
   const projectData = props.projectData;
+  const ipath = projectData[index].image;
+  console.log(ipath, 'ipath');
   return (
     <div className='wrapper'>
       <div className='container'>
@@ -62,8 +65,8 @@ function ProjectDetail(props) {
                 <div>
                   {/* <h1> {projectData[index].title} </h1> */}
                   <img
-                    src={process.env.PUBLIC_URL + projectData[index].image}
-                    // src={projectData[index].image}
+                    // src={process.env.PUBLIC_URL + ipath}
+                    src={project1}
                     className='projImg'
                     alt={'projImg' + (index + 1)}
                   />
