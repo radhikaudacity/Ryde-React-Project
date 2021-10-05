@@ -1,5 +1,5 @@
-import React from 'react';
-// import 'bootstrap/dist/css/bootstrap.css';
+import React, { Suspense, lazy } from 'react';
+
 import './carousel.css';
 import Carousel from 'react-bootstrap/Carousel';
 // import { carousel1, carousel3, carousel4 } from '/images/index';

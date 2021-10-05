@@ -1,26 +1,28 @@
+import React, { Suspense, lazy } from 'react';
 import './App.css';
 import Navigation from './components/navigation';
 import { Switch, Route, Redirect } from 'react-router-dom';
-// import Home from './pages/home';
+import Home from './pages/home';
 // import ProjectDetail from './pages/projectDetail';
 import TeamDetail from './pages/teamDetail';
 import About from './pages/about';
 import projectData from './assets/projectsData';
-import React, { Suspense, lazy } from 'react';
 
 const ProjectDetail = lazy(() => import('./pages/projectDetail'));
-const Home = lazy(() => import('./pages/home'));
+// const Home = lazy(() => import('./pages/home'));
 
-const Loading = () => (
-  <div>
-    <h2>Loading ...</h2>
-  </div>
-);
 function App() {
+  const Loading = () => {
+    return (
+      <div>
+        <h2>Loading ...</h2>
+      </div>
+    );
+  };
   return (
     <>
       <Navigation />
-      <Suspense fallback={Loading}>
+      <Suspense fallback={<h2>Loading ...</h2>}>
         <Switch>
           <Route path='/home' exact>
             <Home projectData={projectData} />
