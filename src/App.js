@@ -11,7 +11,11 @@ import React, { Suspense, lazy } from 'react';
 const ProjectDetail = lazy(() => import('./pages/projectDetail'));
 const Home = lazy(() => import('./pages/home'));
 
-const Loading = () => <div>Loading ...</div>;
+const Loading = () => (
+  <div>
+    <h2>Loading ...</h2>
+  </div>
+);
 function App() {
   return (
     <>
