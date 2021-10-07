@@ -1,7 +1,7 @@
 import React from 'react';
 import './navigation.css';
 import { Link, useHistory } from 'react-router-dom';
-// import logo from '/images/logo.svg';
+import logo from '../images/logo.svg';
 
 function Navigation(props) {
   const history = useHistory();
@@ -20,7 +20,8 @@ function Navigation(props) {
       <div className='logo'>
         <div className='logo-items'>
           <img
-            src={process.env.PUBLIC_URL + '/images/logo.svg'}
+            //src={process.env.PUBLIC_URL + '/images/logo.svg'}
+            src={logo}
             className='logo-svg'
           />
           <h2>Ryde</h2>

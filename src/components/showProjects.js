@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './showProjects.css';
-// import dummy from '/images/showProjects/dummy6.jpg';
+import dummy from '../images/showProjects/dummy6.jpg';
 import { AiOutlineProject } from 'react-icons/ai';
 
 const ShowProjects = (props) => {
@@ -46,8 +46,8 @@ const ShowProjects = (props) => {
                       index === mouseOver && 'image-darken'
                     }`}
                     style={{
-                      // backgroundImage: `url(${dummy})`,
-                      backgroundImage: `url(${process.env.PUBLIC_URL + ipath})`,
+                      backgroundImage: `url(${dummy})`,
+                      // backgroundImage: `url(${window.location.origin + ipath})`,
                     }}
                   ></div>
                   <div className='img-text-wrapper'>
