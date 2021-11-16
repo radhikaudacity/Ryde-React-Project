@@ -7,7 +7,7 @@ function ProjectsSubMenu(props) {
   const [selected, setSelected] = useState(0);
 
   const titlesArray = projectData.map((item) => {
-    return item.title;
+    return [item.title1, item.title2];
   });
 
   useEffect(() => {
@@ -26,7 +26,9 @@ function ProjectsSubMenu(props) {
               className={`btn ${index === selected && 'active-btn'}`}
               onClick={() => setSelected(index)}
             >
-              <Link to={`/projectinfo/${index + 1}`}>{name}</Link>
+              <Link to={`/projectinfo/${index + 1}`}>
+                {name[0] + ' : ' + name[1]}
+              </Link>
             </li>
           );
         })}

@@ -5,50 +5,86 @@
 .top-text {
   margin-top: 4rem;
 }
+.subtitle {
+  color: black;
+
+  font-size: 2rem;
+}
 /*  profolio images////////////// */
 
 .portfolio-items-wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  /* display: grid;
+  grid-template-columns: 1fr 1fr 1fr; */
+  display: flex;
+  flex-wrap: wrap;
+}
+.flex-wrap {
+  flex: 0 0 30%;
 }
 .portfolio-item-wrapper {
   position: relative;
   margin: 10px 10px;
   background-color: #7b36db;
+  border: 2px;
+  border-color: #f7f5f5;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .portfolio-img-bg {
-  height: 180px;
+  height: 300px;
   width: 100%;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  border-radius: 5px;
+  /* box-shadow: 3px 3px #d69a9a; */
 }
 .img-text-wrapper {
   position: absolute;
   top: 0;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* since the direction is column , the centering horizontally has to be done with "align-items" and "width" properties */
   align-items: center;
+  width: 100%;
+
+  /* since the direction is column , the centering vertically has to be done with "justify-content" and "height" properties */
+  justify-content: center;
   height: 100%;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  text-align: center;
+
+  padding: 1rem;
+}
+
+.cardtitle {
+  color: transparent;
+  font-size: 2rem;
+
+  transition: 0.5s;
+}
+.cardtitle-sm {
+  color: transparent;
+  font-size: 1.5rem;
+  font-style: italic;
+
+  transition: 0.5s;
 }
 .logo-wrapper {
   /* width: 50%; */
   margin-bottom: 10px;
   font-size: 3rem;
-  color: white;
-}
-.img-text-wrapper .subtitle {
   color: transparent;
-  /* font-weight: 100; */
   transition: 0.5s;
 }
-.img-text-wrapper:hover .subtitle {
+
+/* ///on mouseover */
+.cardtitle-mouseover {
   color: rgb(237, 241, 241);
-  font-weight: 200;
+  /* font-weight: bold; */
+}
+.cardtitle2-mouseover {
+  color: rgb(237, 241, 241);
+
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
 }
 .image-darken {
   transition: 0.5s;
@@ -56,4 +92,9 @@
 }
 .logo-image {
   width: 10%;
+}
+@media (max-width: 540px) {
+  .flex-wrap {
+    flex: 0 0 1000%;
+  }
 }

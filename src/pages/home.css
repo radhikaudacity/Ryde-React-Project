@@ -1,8 +1,21 @@
 .container {
-  max-width: 100%;
+  width: 100%;
   display: block;
 }
 .wrapper {
-  width: 1250px;
+  max-width: 1381px;
+
   margin: auto;
+}
+
+@media (min-width: 700px) {
+  .central-layout {
+    display: flex;
+  }
+  .main-col {
+    flex: 3;
+  }
+  .side-col {
+    flex: 1;
+  }
 }

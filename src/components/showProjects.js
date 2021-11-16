@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './showProjects.css';
-import dummy from '../images/showProjects/dummy6.jpg';
+import dummy from '../images/showProjects/project1_sm.jpg';
 import { AiOutlineProject } from 'react-icons/ai';
 
 const ShowProjects = (props) => {
@@ -9,7 +9,7 @@ const ShowProjects = (props) => {
   console.log(props.projectData);
   const projectData = props.projectData;
   const projTitles = projectData.map((item) => {
-    return item.title;
+    return [item.title1, item.title2];
   });
 
   return (
@@ -31,36 +31,66 @@ const ShowProjects = (props) => {
             console.log('ipath' + ipath);
             return (
               // className={`btn ${index === selected && 'active-btn'}`}
-              <div
-                className={`portfolio-item-wrapper `}
-                key={index}
-                onMouseOver={() => setSMouseOver(index)}
-                onMouseOut={() => setSMouseOver(-1)}
-              >
-                <Link
-                  to={{ pathname: `/projectInfo/${index + 1}` }}
-                  className=''
+              <div className='flex-wrap'>
+                <div
+                  className={`portfolio-item-wrapper `}
+                  key={index}
+                  onMouseOver={() => setSMouseOver(index)}
+                  onMouseOut={() => setSMouseOver(-1)}
                 >
-                  <div
-                    className={`portfolio-img-bg ${
-                      index === mouseOver && 'image-darken'
-                    }`}
-                    style={{
-                      backgroundImage: `url(${dummy})`,
-                      // backgroundImage: `url(${window.location.origin + ipath})`,
-                    }}
-                  ></div>
-                  <div className='img-text-wrapper'>
-                    <div className='logo-wrapper subtitle'>
-                      <AiOutlineProject />
-                      {/* <img
+                  <Link
+                    to={{ pathname: `/projectInfo/${index + 1}` }}
+                    className=''
+                  >
+                    <div
+                      className={`portfolio-img-bg ${
+                        index === mouseOver && 'image-darken'
+                      }`}
+                      style={{
+                        // backgroundImage: `url(${dummy})`,
+                        // backgroundImage: `url(${process.env.PUBLIC_URL + ipath})`,
+                        backgroundImage: `url(${projectData[index].thumbImage})`,
+                      }}
+                    ></div>
+                    <div className='img-text-wrapper'>
+                      <div
+                        className={`logo-wrapper ${
+                          index === mouseOver && 'cardtitle-mouseover'
+                        }`}
+                      >
+                        <AiOutlineProject />
+                        {/* <img
                         src='/images/showProjects/oracle_cloud.png'
                         className='logo-image'
                       /> */}
+                      </div>
+
+                      <div
+                        className={`cardtitle ${
+                          index === mouseOver && 'cardtitle-mouseover'
+                        }`}
+                      >
+                        {name[0]}
+                      </div>
+                      <div
+                        className={`cardtitle ${
+                          index === mouseOver && 'cardtitle2-mouseover'
+                        } `}
+                      >
+                        {name[1]}
+                      </div>
+                      <div
+                        className={`cardtitle-sm ${
+                          index === mouseOver && 'cardtitle-mouseover'
+                        } `}
+                      >
+                        <br />
+                        <br />
+                        <p>Click to see more</p>
+                      </div>
                     </div>
-                    <div className='subtitle'>{name}</div>
-                  </div>
-                </Link>
+                  </Link>
+                </div>
               </div>
             );
           })}

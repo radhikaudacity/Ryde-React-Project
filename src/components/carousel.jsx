@@ -3,7 +3,7 @@ import React, { Suspense, lazy } from 'react';
 import './carousel.css';
 import Carousel from 'react-bootstrap/Carousel';
 // import { carousel1, carousel3, carousel4 } from '/images/index';
-import carousel1 from '../images/carousel/carousel1.jpg';
+import carousel1 from '../images/carousel/carousel1_sm.jpg';
 import carousel4 from '../images/carousel/carousel4.jpg';
 import carousel3 from '../images/carousel/carousel3.jpg';
 import dummy from '../images/showProjects/dummy6.jpg';
@@ -15,16 +15,16 @@ export default function CarousalHeader() {
         <img
           className='d-block w-100'
           // src={window.location.origin + '/images/carousel/carousel3.jpg'}
-          src={require('../images/carousel/temp.jpg').default}
-          alt='temp require'
+          src={carousel1}
+          alt='carousel1'
         />
       </Carousel.Item>
       <Carousel.Item interval={3000}>
         <img
           className='d-block w-100'
           // src={window.location.origin + '/images/carousel/carousel1.jpg'}
-          src={dummy}
-          alt='Second slide'
+          src={carousel4}
+          alt='carousel4'
         />
       </Carousel.Item>
       <Carousel.Item interval={3000}>
@@ -32,7 +32,7 @@ export default function CarousalHeader() {
           className='d-block w-100'
           // src={window.location.origin + '/images/carousel/carousel4.jpg'}
           src={carousel3}
-          alt='Third slide'
+          alt='carousel3'
         />
       </Carousel.Item>
     </Carousel>

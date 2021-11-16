@@ -1,0 +1,43 @@
+.container {
+  width: 100%;
+  display: block;
+}
+.wrapper {
+  width: 1381px;
+
+  margin: auto;
+}
+.contact-detail ul li {
+  list-style: none;
+  padding-left: 0pt;
+}
+.form-wrapper {
+  font-size: 2rem;
+  width: 80%;
+  margin-top: 5rem;
+}
+.form-control {
+  font-size: 2rem;
+}
+.submit-btn {
+  background-color: #7420d5;
+  border: none;
+  width: 100%;
+  font-size: 20px;
+  -webkit-box-shadow: 1px 1px 4px #7420d5;
+  box-shadow: 1px 1px 4px #7420d5;
+}
+
+.submit-btn:focus {
+  color: #fff;
+  background-color: #7420d5 !important;
+  border-color: #7420d5 !important;
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(116, 32, 213, 0.5) !important;
+  box-shadow: 0 0 0 0.2rem rgba(116, 32, 213, 0.5) !important;
+}
+
+.submit-btn:active {
+  color: #fff;
+  background-color: #6618c0 !important;
+  border-color: #7420d5 !important;
+}

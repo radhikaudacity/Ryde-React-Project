@@ -1,6 +1,7 @@
 import React from 'react';
-import CarousalHeader from '../components/carousel';
+import CarousalHeader from '../components/aliceCarousel.jsx';
 import ShowProjects from '../components/showProjects';
+import Notices from '../components/notices';
 import './home.css';
 import { useLocation } from 'react-router-dom';
 
@@ -11,7 +12,14 @@ function Home(props) {
     <div className='wrapper'>
       <div className='container'>
         <CarousalHeader />
-        <ShowProjects projectData={props.projectData} />
+        <section className='central-layout'>
+          <div className='main-col'>
+            <ShowProjects projectData={props.projectData} />
+          </div>
+          <div className='side-col'>
+            <Notices />
+          </div>
+        </section>
       </div>
     </div>
   );

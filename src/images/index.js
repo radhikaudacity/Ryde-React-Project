@@ -1,6 +1,35 @@
-export { default as project1 } from './projectDetail/project1.jpg';
-export { default as project2 } from './projectDetail/project2.jpg';
-
 export { default as carousel1 } from './carousel/carousel1.jpg';
 export { default as carousel3 } from './carousel/carousel3.jpg';
 export { default as carousel4 } from './carousel/carousel4.jpg';
+
+export { default as project1_300 } from './showProjects/TaxReporting300.jpg';
+export { default as project2_300 } from './showProjects/PCM300.jpg';
+export { default as project3_300 } from './showProjects/NR300.jpg';
+export { default as project4_300 } from './showProjects/Planning300.jpg';
+export { default as project5_300 } from './showProjects/NRExplorer300.jpg';
+export { default as project6_300 } from './showProjects/PCMExplorer300.jpg';
+export { default as project7_300 } from './showProjects/OKE300.jpg';
+export { default as project8_300 } from './showProjects/OCI300.jpg';
+export { default as project9_300 } from './showProjects/CloudOverview300.jpg';
+export { default as project10_300 } from './showProjects/CloudDeveloper300.jpg';
+export { default as project11_300 } from './showProjects/FleetMonitoring300.jpg';
+export { default as project12_300 } from './showProjects/IOTCloud300.jpg';
+export { default as project13_300 } from './showProjects/AssetMonitoring300.jpg';
+export { default as project14_300 } from './showProjects/AgileDevelopment300.jpg';
+export { default as project15_300 } from './showProjects/JavaDevelopers300.jpg';
+
+export { default as project1 } from './projectDetail/TaxReporting.jpg';
+export { default as project2 } from './projectDetail/PCM.jpg';
+export { default as project3 } from './projectDetail/NR.jpg';
+export { default as project4 } from './projectDetail/Planning.jpg';
+export { default as project5 } from './projectDetail/NRExplorer.jpg';
+export { default as project6 } from './projectDetail/PCMExplorer.jpg';
+export { default as project7 } from './projectDetail/OKE.jpg';
+export { default as project8 } from './projectDetail/OCI.jpg';
+export { default as project9 } from './projectDetail/CloudOverview.jpg';
+export { default as project10 } from './projectDetail/CloudDeveloper.jpg';
+export { default as project11 } from './projectDetail/FleetMonitoring.jpg';
+export { default as project12 } from './projectDetail/IOTCloud.jpg';
+export { default as project13 } from './projectDetail/AssetMonitoring.jpg';
+export { default as project14 } from './projectDetail/AgileDevelopment.jpg';
+export { default as project15 } from './projectDetail/JavaDevelopers.jpg';

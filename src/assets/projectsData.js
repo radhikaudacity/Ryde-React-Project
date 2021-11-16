@@ -1,13 +1,47 @@
-import project1 from '../images/projectDetail/project1.jpg';
-import project2 from '../images/projectDetail/project2.jpg';
+import {
+  project1_300,
+  project2_300,
+  project3_300,
+  project4_300,
+  project5_300,
+  project6_300,
+  project7_300,
+  project8_300,
+  project9_300,
+  project10_300,
+  project11_300,
+  project12_300,
+  project13_300,
+  project14_300,
+  project15_300,
+  project1,
+  project2,
+  project3,
+  project4,
+  project5,
+  project6,
+  project7,
+  project8,
+  project9,
+  project10,
+  project11,
+  project12,
+  project13,
+  project14,
+  project15,
+} from '../images/index.js';
+
+//import thumb1 from '../images/showprojects/project1.jpg';
+//import thumb2 from '../images/showprojects/project2.jpg';
 const projectsData = [
   // Project 1 - Tax Reporting
   {
-    title: 'Oracle EPM Cloud: Administering Tax Reporting',
-    image: '/images/projectDetail/project1.jpg',
-    thumbImage: '/images/showProjects/project1.jpg',
-    product: 'Oracle Enterprise Management Cloud',
-    ePMBusinessProcess: 'EPM Profitability and Cost Management',
+    title1: 'Oracle EPM Cloud',
+    title2: 'Administering Tax Reporting',
+    image: project1,
+    thumbImage: project1_300,
+    product: 'Oracle Enterprise Performance Management Cloud',
+    ePMBusinessProcess: 'EPM - Tax Reporting',
     OCIComponent: '',
     project:
       'Technical Learning Content Development for INClass and Online Learning',
@@ -265,13 +299,15 @@ const projectsData = [
       },
     ],
   },
+
   // Project 2 - Administer Profitability and Cost Management
   {
-    title: 'Oracle EPM Cloud: Administer Profitability and Cost Management',
-    image: '/images/projectDetail/project2.jpg',
-    thumbImage: '/images/showProjects/project2.jpg',
-    product: 'Oracle Enterprise Management Cloud',
-    ePMBusinessProcess: 'EPM Profitability and Cost Management',
+    title1: 'Oracle EPM Cloud',
+    title2: 'Administer Profitability and Cost Management',
+    image: project2,
+    thumbImage: project2_300,
+    product: 'Oracle Enterprise Performance Management Cloud',
+    ePMBusinessProcess: 'EPM - Profitability and Cost Management',
     OCIComponent: '',
     project:
       'Technical Learning Content Development for INClass and Online Learning',
@@ -427,11 +463,12 @@ const projectsData = [
 
   //Project 3 - Create and Manage Reports in Narrative Reporting
   {
-    title: 'Oracle EPM Cloud: Create and Manage Reports in Narrative Reporting',
-    image: 'ProjectImage.png',
-    thumbImage: '/images/showProjects/dummy6.jpg',
-    product: 'Oracle Enterprise Management Cloud',
-    ePMBusinessProcess: 'EPM Narrative Reporting',
+    title1: 'Oracle EPM Cloud',
+    title2: 'Create and Manage Reports in Narrative Reporting',
+    image: project3,
+    thumbImage: project3_300,
+    product: 'Oracle Enterprise Performance Management Cloud',
+    ePMBusinessProcess: 'EPM - Narrative Reporting',
     OCIComponent: '',
     project:
       'Technical Learning Content Development for INClass and Online Learning',
@@ -569,13 +606,246 @@ const projectsData = [
       },
     ],
   },
-  // Project 4 - Administering Oracle WebLogic Server for OKE
+
+  // Project 4 - Oracle EPM Cloud: Planning
 
   {
-    title:
-      'Oracle Cloud Infrastructure : Administering Oracle WebLogic Server for OKE',
-    image: 'ProjectImage.png',
-    thumbImage: '/images/showProjects/dummy6.jpg',
+    title1: 'Oracle EPM Cloud',
+    title2: 'Planning - Certification Gap',
+    image: project4,
+    thumbImage: project4_300,
+    product: 'Oracle Enterprise Performance Management Cloud',
+    ePMBusinessProcess: 'EPM - Planning',
+    OCIComponent: '',
+    project:
+      'Technical Learning Content Development for INClass and Online Learning',
+    client: 'Oracle University',
+    deliverables: 'Video, Learning Content, Lab Activity Guide',
+    noOfLessons: '3',
+    noOfSlides: '180+',
+    noOfLabActivities: 'Nil',
+
+    lessonDetails: [
+      {
+        lessonTitle: 'Free Form Application',
+        objectives: [
+          'Create Planning Application',
+          'Create Free Form Application',
+          'Create Free Form Application - Source OTL File',
+          'Create Free Form Application - Source Snapshot',
+          'Important Consideration - OTL and Snapshot import',
+          'Planning Hybrid BSO and ASO Reporting Cube',
+        ],
+      },
+
+      {
+        lessonTitle:
+          'Oracle EPM Cloud: Planning: Leverage best practices for Financials',
+        objectives: [
+          'Introduction to EPM Planning',
+          'Planning Financials',
+          'KPIs in Planning Financials',
+          'Leveraging KPIs in Planning Financials',
+          'Leveraging Financials Rules',
+          'Planning - Workforce',
+          'Planning - Projects',
+          'Planning - Capital',
+          'Planning - Strategic Modelling',
+        ],
+      },
+
+      {
+        lessonTitle: ' Setting up Strategic Modeling',
+        objectives: [
+          'Strategic Modeling - Managing Sub Accounts',
+          'Strategic Modeling - Set Up Funding Options',
+          'Strategic Modeling - Create Scenarios',
+          'Strategic Modeling - Manage Time Periods',
+        ],
+      },
+    ],
+  },
+
+  // Project 5 - Oracle Cloud : Epm Narrative Reporting Explorer
+
+  {
+    title1: 'Oracle Cloud',
+    title2: 'Epm Narrative Reporting Explorer',
+    image: project5,
+    thumbImage: project5_300,
+    product: 'Oracle Enterprise Performance Management Cloud',
+    ePMBusinessProcess: 'Epm - Narrative Reporting',
+    OCIComponent: '',
+    project:
+      'Technical Learning Content Development for INClass and Online Learning',
+    client: 'Oracle University',
+    deliverables: 'Video, Learning Content, Lab Activity Guide',
+    noOfLessons: '5+',
+    noOfSlides: '100+',
+    noOfLabActivities: '',
+
+    lessonDetails: [
+      {
+        lessonTitle: 'Understanding Narrative Reporting',
+        objectives: [
+          'Narrative Reporting - Overview',
+          'Narrative Reporting Home Page',
+          'Management Report - Overview',
+          'Overview of Library',
+          'Overview of Artifacts',
+        ],
+      },
+
+      {
+        lessonTitle: 'Overview of Sample Model and Dimensions',
+        objectives: ['User Management Tools', 'Understanding Security Basics'],
+      },
+
+      {
+        lessonTitle: 'Creating Report Package Structure and Adding Content',
+        objectives: [
+          'Sample Content Overview',
+          'Report Package Overview',
+          'Report Package Components',
+          'Report Center - Overview',
+        ],
+      },
+
+      {
+        lessonTitle: 'Management Reporting - Overview',
+        objectives: [
+          'Sample Report Package - Overview',
+          'Report Designer',
+          'Report Objects Overview',
+        ],
+      },
+
+      {
+        lessonTitle: 'Smart View - Basics',
+        objectives: [
+          'Getting Started with Smart View',
+          'Smart View Ad hoc Analysis',
+        ],
+      },
+
+      {
+        lessonTitle: 'Disclosure Management - Basics',
+        objectives: [
+          'Understanding Disclosure Management',
+          'Smart View - Disclosure Management',
+        ],
+      },
+
+      {
+        lessonTitle: 'Become a EPM NR implementer',
+        objectives: ['Become a EPM NR implementer'],
+      },
+    ],
+  },
+
+  // Project 6 - Oracle Cloud : Epm Profitability and Cost Management Explorer
+
+  {
+    title1: 'Oracle Cloud',
+    title2: 'EPM Profitability and Cost Management Explorer',
+    image: project6,
+    thumbImage: project6_300,
+    product: 'EPM Profitability and Cost Management Explorer',
+    ePMBusinessProcess: 'EPM -  Profitability and Cost Management',
+    OCIComponent: '',
+    project:
+      'Technical Learning Content Development for INClass and Online Learning',
+    client: 'Oracle University',
+    delidverables: 'Video, Learning Content, Lab Activity Guide',
+    noOfLessons: '5+',
+    noOfSlides: '130+',
+    noOfLabActivities: '',
+
+    lessonDetails: [
+      {
+        lessonTitle: 'Introduction to PCMCS',
+        objectives: [
+          'Profitability and Cost Management Cloud - Overview',
+          'Profitability and Cost Management Cloud Home Page',
+        ],
+      },
+
+      {
+        lessonTitle: 'Using PCMCS',
+        objectives: [
+          'Commonly Used Terms',
+          'Understanding Security Basics',
+          'User Management Tools',
+        ],
+      },
+
+      {
+        lessonTitle: 'About PCMCS Application',
+        objectives: [
+          'Application Overview',
+          'Sample ApplicationBkSLm30',
+          'Application Console',
+        ],
+      },
+
+      {
+        lessonTitle: 'About PCMCS Dimensions',
+        objectives: ['Dimension Overview', 'Dimension Types'],
+      },
+
+      {
+        lessonTitle: 'About PCMCS calculation and views',
+        objectives: [
+          'PCM - Model views',
+          'Point of view',
+          'PCM Rules Overview',
+          'Rule Balancing Screen',
+          'Smartview Overview',
+          'Allocation Tracking',
+        ],
+      },
+
+      {
+        lessonTitle: 'About PCMCS Rule and Rulesets',
+        objectives: [
+          'Creating Rules/Rulesets',
+          'Model Validation',
+          'Rule data validation report (before running rules)',
+          'Running Rules and Rulesets',
+          'Job Library',
+        ],
+      },
+
+      {
+        lessonTitle: 'Working with Financial Reports',
+        objectives: ['Overview'],
+      },
+
+      {
+        lessonTitle: 'Working with PCMCS Analytics',
+        objectives: [
+          'Overview of Dashboards',
+          'Overview of Profit Curve',
+          'Overview of KPIs',
+          'Overview of scatter analysis',
+          'About analysis view',
+        ],
+      },
+
+      {
+        lessonTitle: 'Continue your learning as an Implementer',
+        objectives: ['Become a PCMCS Implementor'],
+      },
+    ],
+  },
+
+  // Project 7 - Administering Oracle WebLogic Server for OKE
+
+  {
+    title1: 'Oracle Cloud Infrastructure',
+    title2: 'Administering Oracle WebLogic Server for OKE',
+    image: project7,
+    thumbImage: project7_300,
     product: 'Oracle Cloud Infrastructure',
     ePMBusinessProcess: '',
     OCIComponent: 'Oracle WebLogic Server For OKE',
@@ -693,13 +963,13 @@ const projectsData = [
     ],
   },
 
-  // Project 5 - Oracle Cloud Infrastructure : Administering WebLogic Server on OCI Gen2
+  // Project 8 - Oracle Cloud Infrastructure : Administering WebLogic Server on OCI Gen2
 
   {
-    title:
-      'Oracle Cloud Infrastructure : Administering WebLogic Server on OCI Gen2',
-    image: 'ProjectImage.png',
-    thumbImage: '/images/showProjects/dummy6.jpg',
+    title1: 'Oracle Cloud Infrastructure',
+    title2: 'Administering WebLogic Server on OCI Gen2',
+    image: project8,
+    thumbImage: project8_300,
     product: 'Oracle Cloud Infrastructure',
     ePMBusinessProcess: '',
     OCIComponent: 'WebLogic Server on OCI Gen2',
@@ -819,70 +1089,13 @@ const projectsData = [
     ],
   },
 
-  // Project 6 - Oracle EPM Cloud: Planning
+  // Project 9 - Oracle Cloud : Oracle Cloud Overview
 
   {
-    title: 'Oracle EPM Cloud: Planning - Certification Gap',
-    image: 'ProjectImage.png',
-    thumbImage: '/images/showProjects/dummy6.jpg',
-    product: 'Oracle Enterprise Management Cloud',
-    ePMBusinessProcess: 'EPM Cloud Planning',
-    OCIComponent: '',
-    project:
-      'Technical Learning Content Development for INClass and Online Learning',
-    client: 'Oracle University',
-    deliverables: 'Video, Learning Content, Lab Activity Guide',
-    noOfLessons: '3',
-    noOfSlides: '180+',
-    noOfLabActivities: 'Nil',
-
-    lessonDetails: [
-      {
-        lessonTitle: 'Free Form Application',
-        objectives: [
-          'Create Planning Application',
-          'Create Free Form Application',
-          'Create Free Form Application - Source OTL File',
-          'Create Free Form Application – Source Snapshot',
-          'Important Consideration - OTL and Snapshot import',
-          'Planning Hybrid BSO and ASO Reporting Cube',
-        ],
-      },
-
-      {
-        lessonTitle:
-          'Oracle EPM Cloud: Planning: Leverage best practices for Financials',
-        objectives: [
-          'Introduction to EPM Planning',
-          'Planning Financials',
-          'KPIs in Planning Financials',
-          'Leveraging KPIs in Planning Financials',
-          'Leveraging Financials Rules',
-          'Planning - Workforce',
-          'Planning - Projects',
-          'Planning - Capital',
-          'Planning - Strategic Modelling',
-        ],
-      },
-
-      {
-        lessonTitle: ' Setting up Strategic Modeling',
-        objectives: [
-          'Strategic Modeling - Managing Sub Accounts',
-          'Strategic Modeling - Set Up Funding Options',
-          'Strategic Modeling – Create Scenarios',
-          'Strategic Modeling - Manage Time Periods',
-        ],
-      },
-    ],
-  },
-
-  // Project 7 - Oracle Cloud : Oracle Cloud Overview
-
-  {
-    title: 'Oracle Cloud : Oracle Cloud Overview',
-    image: 'ProjectImage.png',
-    thumbImage: '/images/showProjects/dummy6.jpg',
+    title1: 'Oracle Cloud',
+    title2: 'Oracle Cloud Overview',
+    image: project9,
+    thumbImage: project9_300,
     product: 'Oracle Cloud Overview',
     ePMBusinessProcess: '',
     OCIComponent: '',
@@ -956,13 +1169,14 @@ const projectsData = [
     ],
   },
 
-  // Project 8 - Oracle Cloud : Oracle Cloud Overview
+  // Project 10 - Oracle Cloud : Oracle Cloud Application Developer - Student Learning Subscription
 
   {
-    title:
-      'Oracle Cloud: Oracle Cloud Application Developer - Student Learning Subscription',
-    image: 'ProjectImage.png',
-    thumbImage: '/images/showProjects/dummy6.jpg',
+    title1: 'Oracle Cloud',
+    title2:
+      'Oracle Cloud Application Developer - Student Learning Subscription',
+    image: project10,
+    thumbImage: project10_300,
     product: 'Cloud Application Developer Student Learning Subscription',
     ePMBusinessProcess: '',
     OCIComponent: '',
@@ -1030,15 +1244,18 @@ const projectsData = [
       },
     ],
   },
-  // Project 9 - Oracle IoT Cloud : Fleet Monitoring
+
+  // Project 11 - Oracle IoT Cloud : Fleet Monitoring
 
   {
-    title: 'Oracle IoT Cloud : Fleet Monitoring',
-    image: 'ProjectImage.png',
-    thumbImage: '/images/showProjects/dummy6.jpg',
+    title1: 'Oracle IoT Cloud',
+    title2: 'Fleet Monitoring',
+    image: project11,
+    thumbImage: project11_300,
     product: 'Oracle Fleet Monitoring',
     ePMBusinessProcess: '',
     OCIComponent: '',
+    ioTCloudApplication: 'Oracle Fleet Monitoring',
     project:
       'Technical Learning Content Development for INClass and Online Learning',
     client: 'Oracle University',
@@ -1062,12 +1279,13 @@ const projectsData = [
     ],
   },
 
-  // Project 10 - Oracle IoT Cloud: Oracle IoT Cloud Service
+  // Project 12 - Oracle IoT Cloud: Oracle IoT Cloud Service
 
   {
-    title: 'Oracle IoT Cloud: Oracle IoT Cloud Service',
-    image: 'ProjectImage.png',
-    thumbImage: '/images/showProjects/dummy6.jpg',
+    title1: 'Oracle IoT Cloud',
+    title2: 'Oracle IoT Cloud Service',
+    image: project12,
+    thumbImage: project12_300,
     product: 'Oracle IoT Cloud Service',
     ePMBusinessProcess: '',
     OCIComponent: '',
@@ -1195,15 +1413,17 @@ const projectsData = [
     ],
   },
 
-  // Project 11 - Oracle IoT Cloud : Oracle IoT Asset Monitoring
+  // Project 13 - Oracle IoT Cloud : Oracle IoT Asset Monitoring
 
   {
-    title: 'Oracle IoT Cloud : Oracle IoT Asset Monitoring',
-    image: 'ProjectImage.png',
-    thumbImage: '/images/showProjects/dummy6.jpg',
+    title1: 'Oracle IoT Cloud Service',
+    title2: 'Oracle IoT Asset Monitoring',
+    image: project13,
+    thumbImage: project13_300,
     product: 'Oracle IoT Cloud Service',
     ePMBusinessProcess: '',
     OCIComponent: '',
+    ioTCloudApplication: 'Oracle IoT Asset Monitoring',
     project:
       'Technical Learning Content Development for INClass and Online Learning',
     client: 'Oracle University',
@@ -1277,197 +1497,201 @@ const projectsData = [
     ],
   },
 
-  // Project 12 - Oracle Cloud : Epm Narrative Reporting Explorer
+  // Project 14 - Oracle Cloud : Agile Development With Oracle Developer Cloud Service
 
   {
-    title: 'Oracle Cloud : Epm Narrative Reporting Explorer',
-    image: 'ProjectImage.png',
-    thumbImage: '/images/showProjects/dummy6.jpg',
-    product: 'Epm Narrative Reporting Explorer',
+    title1: 'Oracle Cloud',
+    title2: 'Agile Development With Oracle Developer Cloud Service',
+
+    image: project14,
+    thumbImage: project14_300,
+    product: 'Oracle Developer Cloud Service',
     ePMBusinessProcess: '',
     OCIComponent: '',
+    ioTCloudApplication: '',
+    oracleCloud: 'Agile Development With Oracle Developer Cloud Service',
+
     project:
       'Technical Learning Content Development for INClass and Online Learning',
     client: 'Oracle University',
     deliverables: 'Video, Learning Content, Lab Activity Guide',
-    noOfLessons: '5+',
-    noOfSlides: '100+',
-    noOfLabActivities: '',
+    noOfLessons: '10+',
+    noOfSlides: '450+',
+    noOfLabActivities: '4',
 
     lessonDetails: [
       {
-        lessonTitle: 'Understanding Narrative Reporting',
+        lessonTitle: 'Agile and Cloud Computing Overview',
         objectives: [
-          'Narrative Reporting - Overview',
-          'Narrative Reporting Home Page',
-          'Management Report - Overview',
-          'Overview of Library',
-          'Overview of Artifacts',
+          'Agile Methodology and Cloud Computing Overview',
+          'Steps to Sign into Oracle Cloud',
+          'How Developer Cloud Service works',
+          'Version, Source Code  management and how Git is implemented in Oracle DevCs',
+          'Implement Project Maven Repository in Oracle DevCs',
+          'Using Snippets and issue Tracking Tools in DevCs',
+          'How to use the Agile Methodology in DevCs',
+          'Using Wiki Pages and implementing IDE’s in DevCs',
+          'Managing Project Jobs, Builds and Deploying Applications in DevCs',
         ],
       },
 
       {
-        lessonTitle: 'Overview of Sample Model and Dimensions',
-        objectives: ['User Management Tools', 'Understanding Security Basics'],
-      },
-
-      {
-        lessonTitle: 'Creating Report Package Structure and Adding Content',
+        lessonTitle: 'Sign Into Oracle Cloud',
         objectives: [
-          'Sample Content Overview',
-          'Report Package Overview',
-          'Report Package Components',
-          'Report Center - Overview',
+          'Describe Oracle Cloud accounts',
+          'List the types of cloud subscriptions',
+          'Steps to Subscribe to an Oracle Cloud Service Trial License',
+          'Sign into Oracle Cloud',
+          'My Services Dash Board',
+          'Oracle Cloud User Roles and Privileges',
         ],
       },
 
       {
-        lessonTitle: 'Management Reporting - Overview',
+        lessonTitle: 'Sign Into Oracle Cloud',
         objectives: [
-          'Sample Report Package - Overview',
-          'Report Designer',
-          'Report Objects Overview',
+          'Describe Oracle Cloud accounts',
+          'List the types of cloud subscriptions',
+          'Steps to Subscribe to an Oracle Cloud Service Trial License',
+          'Sign into Oracle Cloud',
+          'My Services Dash Board',
+          'Oracle Cloud User Roles and Privileges',
         ],
       },
 
       {
-        lessonTitle: 'Smart View - Basics',
+        lessonTitle: 'Sign Into Oracle Cloud',
         objectives: [
-          'Getting Started with Smart View',
-          'Smart View Ad hoc Analysis',
+          'Navigating to Oracle Developer Cloud service',
+          'Creating Oracle Developer Cloud Service Instance',
+          'Configure connection to Oracle Cloud Infrastructure Compute Classic and Object Storage Classic',
         ],
       },
 
       {
-        lessonTitle: 'Disclosure Management - Basics',
+        lessonTitle: 'Oracle Developer Cloud Service Overview',
         objectives: [
-          'Understanding Disclosure Management',
-          'Smart View - Disclosure Management',
+          'Overview and Architecture of Oracle Developer Cloud Services',
+          'Creating a New Project',
+          'Setting up User Preferences – Profile',
+          'Create environment & Instances',
         ],
       },
 
       {
-        lessonTitle: 'Become a EPM NR implementer',
-        objectives: ['Become a EPM NR implementer'],
+        lessonTitle:
+          'Implementing Agile Methodology  in Oracle Developer Cloud Service',
+        objectives: [
+          'Agile Components Overview',
+          'Describe the key components of the Agile page',
+          'Create issue and manage boards on the Agile page',
+          'Create and manage sprints and issues',
+          'Use charts and reports in the Reports view',
+        ],
+      },
+
+      {
+        lessonTitle: 'Using Git in Oracle Developer Cloud Service',
+        objectives: [
+          'Describe version control',
+          'Use Git in Oracle Developer Cloud Service',
+          'Clone Oracle Developer Cloud Service project Git repository to local machine',
+        ],
+      },
+
+      {
+        lessonTitle: 'Define, Configure Project Template',
+        objectives: [
+          'Defining a  Project Template',
+          'Setting Visibility Properties',
+          'Managing Rules',
+          'Adding Variables',
+          'Manage Project Announcements',
+          'Manage Project Tags',
+        ],
+      },
+
+      {
+        lessonTitle:
+          'Using Snippets and Wiki Pages in Oracle Developer Cloud Service',
+        objectives: [
+          'Create and manage snippets',
+          'Create and manage Wiki pages',
+        ],
+      },
+
+      {
+        lessonTitle:
+          'Using a Project Maven Repository in Oracle Developer Cloud Service',
+        objectives: [
+          'Describe a Project Maven repository',
+          'Project Object Model(POM)',
+          'Managing Artifacts in Maven  - Developer Cloud service',
+          'Using the Maven Command-Line Interface',
+          'Maven Repository Administration',
+        ],
+      },
+
+      {
+        lessonTitle: 'Using IDEs with Oracle Developer Cloud Service',
+        objectives: [
+          'Use the Eclipse IDE with Oracle Developer Cloud Service',
+          'Use the NetBeans IDE with Oracle Developer Cloud Service',
+          'Use Oracle JDeveloper with Oracle Developer Cloud Service',
+        ],
+      },
+
+      {
+        lessonTitle:
+          'Managing Project Jobs and Builds in Oracle Developer Cloud Service',
+        objectives: [
+          'Understanding “Build” Process',
+          'Build VM and a Build VM Template',
+          'Workflow of Job and Build',
+          'Set Up the Build System',
+          'Build Page Overview',
+          'Creating and Configuring a Job',
+          'Run a build',
+        ],
+      },
+
+      {
+        lessonTitle: 'Using Merge Requests to Review Code',
+        objectives: [
+          'Describe code review basics',
+          'Create and manage a new branch for review',
+          'Merge a review branch with a target branch',
+        ],
+      },
+
+      {
+        lessonTitle: 'Deploying an Application',
+        objectives: [
+          'Deployment - Overview',
+          'Deployment Concepts and Terms',
+          'Deployment -  Prerequisite',
+          'Deploy an application to',
+          'Oracle Java Cloud Service(JCS)',
+          'Oracle Java Cloud Service – SaaS Extension(JCS-SX)',
+          'Oracle Application Container Cloud Service(ACCS)',
+          'Examine deployment logs',
+        ],
       },
     ],
   },
 
-  // Project 13 - Oracle Cloud : Epm Profitability and Cost Management Explorer
+  // Project 15 - Oracle Cloud : Java IoT Developer
 
   {
-    title: 'Oracle Cloud : Epm Profitability and Cost Management Explorer',
-    image: 'ProjectImage.png',
-    thumbImage: '/images/showProjects/dummy6.jpg',
-    product: 'Epm Profitability and Cost Management Explorer',
-    ePMBusinessProcess: '',
-    OCIComponent: '',
-    project:
-      'Technical Learning Content Development for INClass and Online Learning',
-    client: 'Oracle University',
-    deliverables: 'Video, Learning Content, Lab Activity Guide',
-    noOfLessons: '5+',
-    noOfSlides: '130+',
-    noOfLabActivities: '',
+    title1: 'Oracle Cloud',
+    title2: 'Java IoT Developer',
 
-    lessonDetails: [
-      {
-        lessonTitle: 'Understanding Narrative Reporting',
-        objectives: [
-          'Narrative Reporting - Overview',
-          'Narrative Reporting Home Page',
-          'Management Report - Overview',
-          'Overview of Library',
-          'Overview of Artifacts',
-        ],
-      },
-
-      {
-        lessonTitle: 'Introduction to PCMCS',
-        objectives: [
-          'Profitability and Cost Management Cloud - Overview',
-          'Profitability and Cost Management Cloud Home Page',
-        ],
-      },
-
-      {
-        lessonTitle: 'Using PCMCS',
-        objectives: [
-          'Commonly Used Terms',
-          'Understanding Security Basics',
-          'User Management Tools',
-        ],
-      },
-
-      {
-        lessonTitle: 'About PCMCS Application',
-        objectives: [
-          'Application Overview',
-          'Sample ApplicationBkSLm30',
-          'Application Console',
-        ],
-      },
-
-      {
-        lessonTitle: 'About PCMCS Dimensions',
-        objectives: ['Dimension Overview', 'Dimension Types'],
-      },
-
-      {
-        lessonTitle: 'About PCMCS calculation and views',
-        objectives: [
-          'PCM - Model views',
-          'Point of view',
-          'PCM Rules Overview',
-          'Rule Balancing Screen',
-          'Smartview Overview',
-          'Allocation Tracking',
-        ],
-      },
-
-      {
-        lessonTitle: 'About PCMCS Rule and Rulesets',
-        objectives: [
-          'Creating Rules/Rulesets',
-          'Model Validation',
-          'Rule data validation report (before running rules)',
-          'Running Rules and Rulesets',
-          'Job Library',
-        ],
-      },
-
-      {
-        lessonTitle: 'Working with Financial Reports',
-        objectives: ['Overview'],
-      },
-
-      {
-        lessonTitle: 'Working with PCMCS Analytics',
-        objectives: [
-          'Overview of Dashboards',
-          'Overview of Profit Curve',
-          'Overview of KPIs',
-          'Overview of scatter analysis',
-          'About analysis view',
-        ],
-      },
-
-      {
-        lessonTitle: 'Continue your learning as an Implementer',
-        objectives: ['Become a PCMCS Implementor'],
-      },
-    ],
-  },
-
-  // Project 14 - Oracle Cloud : Java IoT Developer
-
-  {
-    title: 'Oracle Cloud : Java IoT Developer',
-    image: 'ProjectImage.png',
-    thumbImage: '/images/showProjects/dummy6.jpg',
+    image: project15,
+    thumbImage: project15_300,
     product: 'Java IoT Developer',
     ePMBusinessProcess: '',
     OCIComponent: '',
+    ioTCloudApplication: 'Java IoT Developer',
     project:
       'Technical Learning Content Development for INClass and Online Learning',
     client: 'Oracle University',

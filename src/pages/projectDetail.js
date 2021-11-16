@@ -63,10 +63,10 @@ function ProjectDetail(props) {
               <div className='right'>
                 {/* -------------image --------------*/}
                 <div>
-                  {/* <h1> {projectData[index].title} </h1> */}
+                  {<h2 class='projTitle'> {projectData[index].title2} </h2>}
                   <img
-                    src={window.location.origin + ipath}
-                    // src={project1}
+                    // src={window.location.origin + ipath}
+                    src={ipath}
                     className='projImg'
                     alt={'projImg' + (index + 1)}
                   />

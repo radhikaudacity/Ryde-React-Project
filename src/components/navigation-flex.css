@@ -1,0 +1,41 @@
+.main-nav {
+  margin-left: 20px;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.wrapper {
+  margin: auto;
+  max-width: 75rem;
+}
+
+.logo {
+  flex: 1;
+}
+.logo-items {
+  display: flex;
+  align-items: center;
+}
+.logo-svg {
+  height: 40px;
+  padding-right: 10px;
+}
+.menu-btn {
+  flex: 1;
+}
+.menu-btn ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.menu-btn ul li {
+  flex: 1;
+}
+.menu-btn ul li a {
+  text-transform: uppercase;
+  color: rgba(0 0 3 0.8);
+  transition: 0.5s;
+}
