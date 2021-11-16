@@ -1,9 +1,11 @@
 .main-nav {
-  margin-left: 20px;
+  margin-left: 120px;
+  margin-right: 100px;
   padding: 20px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  /* box-shadow: #7420d5 0px 50px 200px -20px, rgba(0, 0, 0, 0.4) 0 0 60px -30px; */
 }
 .wrapper {
   margin: auto;

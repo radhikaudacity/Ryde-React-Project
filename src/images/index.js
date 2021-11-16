@@ -1,6 +1,8 @@
-export { default as carousel1 } from './carousel/carousel1.jpg';
-export { default as carousel3 } from './carousel/carousel3.jpg';
-export { default as carousel4 } from './carousel/carousel4.jpg';
+export { default as slider1 } from './carousel/slider1.jpg';
+export { default as slider2 } from './carousel/slider2.jpg';
+export { default as slider3 } from './carousel/slider3.jpg';
+export { default as slider4 } from './carousel/slider4.jpg';
+export { default as slider5 } from './carousel/slider5.jpg';
 
 export { default as project1_300 } from './showProjects/TaxReporting300.jpg';
 export { default as project2_300 } from './showProjects/PCM300.jpg';

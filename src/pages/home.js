@@ -10,7 +10,7 @@ function Home(props) {
   console.log('home', location);
   return (
     <div className='wrapper'>
-      <div className='container'>
+      <div className=''>
         <CarousalHeader />
         <section className='central-layout'>
           <div className='main-col'>
